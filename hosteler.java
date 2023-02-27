@@ -55,7 +55,7 @@ Hostel(){
             System.out.println("4)You can use Washing machine of Hostel.");
             System.out.println("5)You can enjoy indoor games in our Fun-zone area.");
         }
-        if(choice_1==4){}
+        if(choice_1==4){"*******"}
         if(choice_1==5){}
 
 
