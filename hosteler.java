@@ -55,8 +55,18 @@ Hostel(){
             System.out.println("4)You can use Washing machine of Hostel.");
             System.out.println("5)You can enjoy indoor games in our Fun-zone area.");
         }
-        if(choice_1==4){"*******"}
+        if(choice_1==4){
+            System.out.println("Smoking, Alcohol & Narcotic consumption is strictly prohibited in and around the Hostel premises.");
+            System.out.println("The Management & Staff will not be responsible for personal belongings.");
+            System.out.println("Students must keep the Campus & Rooms clean. Defacing walls, equipment, furniture etc., is strictly prohibited.");
+            System.out.println("Birthday/Other Celebrations are strictly prohibited in Hostel.");
+            System.out.println("Students must turn off all the electrical equipments & lights before leaving their rooms."); 
+            System.out.println("Students are not allowed to use electric stoves, heaters etc in rooms except in designated places.");
+            
+                                
+                       }
         if(choice_1==5){}
+            
 
 
 }
