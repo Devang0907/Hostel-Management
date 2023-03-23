@@ -1,4 +1,4 @@
-import java.util*;
+import java.util.*;
 public class hosteler {
     public static void main(String args[]){
         Hostel h=new Hostel();
@@ -15,13 +15,13 @@ class Hostel{
     String city;
     String mobile_no;
     String email_id;
-    char room;
+    String room;
     int flag=0;
     Scanner sc=new Scanner(System.in);
     
 
 Hostel(){
-        While(flag==0){
+        while(flag==0){
         System.out.println("Welcome to Hostel portal");
         
         System.out.println("press 1:to get information about us");
@@ -29,16 +29,18 @@ Hostel(){
         System.out.println("press 3:to pay fees");
         System.out.println("press 4:to pay feedback");
         System.out.println("press 5:to exit");
+		System.out.println("                                                      ");
 
-        int choice=s.nextInt();
+        int choice=sc.nextInt();
    
         if(choice==1){infoUs();}
-        if(choice==2){admission();}
-        if(choice==3){fees();}
-        if(choice==4){feedback();}
-        if(choice==5){flag=1;}
+        else if(choice==2){admission();}
+        else if(choice==3){fees();}
+        else if(choice==4){feedback();}
+        else if(choice==5){flag=1;}
         else{   
             System.out.println("Enter valid choice.");
+			
             }  
         }
 }
@@ -47,9 +49,10 @@ Hostel(){
         System.out.println("press 2:to get information about Mess");
         System.out.println("press 3:to get information about Services");
         System.out.println("press 4:to get information about Rules & Regulations");
-        System.out.println("press 5:to go Back"); 
+        System.out.println("press 5:to go Back");
+        System.out.println("                                                      ");		
 
-        int choice_1=s.nextInt();
+        int choice_1=sc.nextInt();
         if(choice_1==1){
             System.out.println("Fee Structure :");
             System.out.println("  Room type     No. of Sharing     Fees/month    A.C./Non A.C.");
@@ -59,40 +62,46 @@ Hostel(){
             System.out.println("    C        4               9,000                   A.C.   ");
             System.out.println("    D        4               8,000                 Non A.C  ");
             System.out.println("    G        6               6,000                 Non A.C  ");
+			System.out.println("                                                                 ");
 
         }
-        if(choice_1==2){
+        else if(choice_1==2){
             System.out.println("In our, Mess We are serve Healthy and Nutriton Food.");
             System.out.println("Including Breakfast,Lunch and Dinner,We also serve Evening Snacks.");
             System.out.println("There is Tea and Milk in Breakfact with poha/Idli/Upma/Gathiya...");
             System.out.println("In lunch,We serve 2 sabji,Roti,Rice-Dal,ButterMilk.");
             System.out.println("In Dinner,We serve Sabji-Roti and Khichadi-Kadhi.");
+			System.out.println("                                                                      ");
             
     }
-        if(choice_1==3){
+        else if(choice_1==3){
             System.out.println("Some of our services:");
             System.out.println("1)We have 10 Member Staff including Wathchmen.");
             System.out.println("2)Your Room will clean twice a week by our staff.");
             System.out.println("3)You have access to free wi-fi.");
             System.out.println("4)You can use Washing machine of Hostel.");
             System.out.println("5)You can enjoy indoor games in our Fun-zone area.");
+			System.out.println("                                                             ");
         }
-        if(choice_1==4){
+        else if(choice_1==4){
             System.out.println("Smoking, Alcohol & Narcotic consumption is strictly prohibited in and around the Hostel premises.");
             System.out.println("The Management & Staff will not be responsible for personal belongings.");
             System.out.println("Students must keep the Campus & Rooms clean. Defacing walls, equipment, furniture etc., is strictly prohibited.");
             System.out.println("Birthday/Other Celebrations are strictly prohibited in Hostel.");
             System.out.println("Students must turn off all the electrical equipments & lights before leaving their rooms."); 
             System.out.println("Students are not allowed to use electric stoves, heaters etc in rooms except in designated places.");
+			System.out.println("                                                                                                     ");
             
                                 
                        }
+		else if(choice_1==5){flag=1;}
             else{
                System.out.println("Enter valid choice.");
+			   flag=1;
            }
         }
     
-}
+
 
         void admission(){
             System.out.println("Enter your name :");
@@ -111,6 +120,7 @@ Hostel(){
             email_id=sc.next();
             System.out.println("Enter room type :");
             room=sc.nextLine();
+			System.out.println("                                                      ");
                
             
 
@@ -125,24 +135,24 @@ Hostel(){
            if(c==1){
                System.out.println("You can pay using upi by given upi id");
                System.out.println("hosteler@123");
+			   System.out.println("                                                      ");
            }
-           if(c==2){
+           else if(c==2){
                System.out.println("You can pay fees to our office.");
+			   System.out.println("                                                      ");
            }
            else{
                System.out.println("Enter valid choice.");
+			   flag=1;
            }
        }
            
            void feedback(){
                
                System.out.println("Enter your feedback below :");
-               String feedback=sc.next();
+               String feedback=sc.nextLine();
+			   feedback=sc.nextLine();
+		   
+		   
                
-               
-    
-
-       
-
-    
-}
+}}
